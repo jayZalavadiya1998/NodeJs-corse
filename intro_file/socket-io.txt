@@ -1,0 +1,25 @@
+sockt io 
+
+->server side client ne connect karva mate ==>
+	ex-->.io.on('event_name	',cbfn)
+	
+	io.on('define_Eventname',()=>{
+		soket.on(eventname,(argument)=>{
+		console.log(argument)
+			})
+	})
+
+
+->client side thi data mokalvo hoi to==> soket.imit(define_Eventname,data)
+
+->io.on ==> (listen)meassage (data) ne recive karva mate 
+->io.emit=>(speak) meassage (data) ne mokalva mate 
+
+-----namespace thi data recive-----
+
+
+===>(FE)const socket=io("http://localhost:backendportnumber/namespace_name")
+
+===>(BE)io.of('/namespace_name').on("connection",(socket)=>{
+console.log("teacher",socket.id)
+}) 

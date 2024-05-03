@@ -1,0 +1,36 @@
+API-Applicatin Programing Interface
+
+req.method--->method kai che check krvi hoi tyare
+
+how many types we can send data to the server
+
+1.Query String (get)
+ ex..localhost:4000?name=value&name=value
+ send request on get method 
+ get method limit on 2,048 characters
+
+2.json payload body (post)
+ send request on post method
+ working in postman :-post>body>row>json
+  ex..{
+   	"name":"jay",
+	"fullnme":"zalavadiya"
+	}
+
+3. URL Segnment
+	ex..localhost:4000/Endpoint/pass the value
+	backend code:-
+		app.get (/endpoint/:varible,(req,res)=>{
+					res.send(res.params)
+					       })
+
+
+middleware----
+
+type of middleware
+
+1).Application level middleware--(aa middleware api(ex./student) ni pela call thai)
+2).Router-level middleware
+3).Error-handling middleware
+4).Built-in middleware
+5).Third-party middleware
