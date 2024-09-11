@@ -34,3 +34,6 @@ type of middleware
 3).Error-handling middleware
 4).Built-in middleware
 5).Third-party middleware
+
+
+cors policy ---> BE or FE ko Connect karne k liye cors policy ka use hota hai vo ek library hai  
